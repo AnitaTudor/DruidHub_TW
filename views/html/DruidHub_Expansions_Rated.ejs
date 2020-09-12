@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="description" content="Druid Guides for WoW and WoW Classic">
+    <meta name="keywords" content="Druid,Expansions,WoW,WoW Classic,Ratings">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../css/DruidHub_Expansions_Rated.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/druidhub_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>
+        DruidHub:Expansions Rating
+    </title>
+
+
+    <script src="../js_scripts/parsing_XML.js">
+    </script>
+
+</head>
+
+
+
+<body onload="loadDoc()">
+
+    <header class="top-side">
+        <% include ../fragments/DruidHub_header %>
+    </header>
+    <!--SITE TEMPLATE ENDS HERE-->
+
+    <section id="user-inputs">
+        <button type="button" onclick="helpmeParse_TXT_INPUT()">Text Input</button>
+        <button type="button" onclick="helpmeParse_RANGE_INPUT()">Range Input</button>
+        <button type="button" onclick="helpmeParse_CHECKBOX_INPUT()">Checkbox Input</button>
+        <button type="button" onclick="helpmeParse_RADIO_INPUT()">Radio Input</button>
+        <button type="button" onclick="helpmeParse_SELECT_INPUT()">Select Input</button>
+        <button type="button" onclick="helpmeParse_TEXT_AREA_INPUT()">Text Area Input</button>
+        <form onsubmit="validate()">
+            <input type="text" id="phone-number" placeholder="phone number" /> <br>
+            <input type="submit" />
+        </form>
+
+        <button type="button" onclick="show_date()">show date</button>
+
+    </section>
+
+    <div id="show-expansion">
+
+    </div>
+
+</body>
+
+
+
+</html>

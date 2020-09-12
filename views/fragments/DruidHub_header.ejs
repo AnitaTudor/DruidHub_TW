@@ -1,0 +1,42 @@
+<head>
+
+</head>
+<div class="logo-self-link-click">
+    <div class="logo">
+        <a href="/">
+            <img src="../images/druidhub_logo.png" alt="DruidHub" title="DruidHub:Home" width="90" height="90" class="logo-self-link">
+        </a>
+    </div>
+</div>
+
+<nav class="dropdown">
+    <button class="dropdownbtn">
+             <i class="fa fa-bars">
+             </i>
+        </button>
+    <div class="dropdown-content">
+        <div class="wow-menu">
+            <!--COMING SOONG WoW page-->
+            <a href="#">WoW </a>
+        </div>
+        <div class="wow-expansion-rating">
+            <a href="/DruidHub_Expansions_Rated">Expansion Rating</a>
+        </div>
+        <div class="login">
+            <a href="/DruidHub_login">Login</a>
+        </div>
+        <div>
+            <% if(locals.user){ %>
+                <a href="/DruidHub_logout">Logout</a>
+                <% } %>
+        </div>
+        <div class="wow-classic-menu">
+            <!--COMING SOON WoW Classic Page-->
+            <a href="#">WoW Classic</a>
+            <div class="wow-classic-menu-content">
+                <a href="/DruidHub_WoW_Classic_Resto_Guide">Restoration Druid Guide</a>
+            </div>
+        </div>
+
+    </div>
+</nav>

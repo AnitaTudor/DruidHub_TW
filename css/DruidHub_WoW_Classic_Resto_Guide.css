@@ -1,0 +1,460 @@
+                @font-face {
+                    font-family: main-font;
+                    src: url(../fonts/celtic.TTF);
+                }
+                
+                body {
+                    padding: 0;
+                    margin: 0;
+                    background-color: darkgray;
+                    background-image: url("../images/malfurion.jpg");
+                    background-size: cover;
+                    background-attachment: fixed;
+                }
+                
+                header.top-side {
+                    background-color: black;
+                    height: 50px
+                }
+                /* making logo inline element then centering it */
+                
+                .logo-self-link-click {
+                    text-align: center;
+                }
+                
+                div.logo {
+                    display: inline-block;
+                    overflow: visible;
+                }
+                /* positioning dropdown content */
+                
+                .dropdown {
+                    position: fixed;
+                    display: inline-block;
+                    top: 0;
+                }
+                /*  styling the button */
+                
+                .dropdownbtn {
+                    cursor: pointer;
+                    background-color: black;
+                    border: none;
+                    color: chocolate;
+                    font-size: 40px;
+                }
+                /* styling the dropdown content */
+                
+                .dropdown-content {
+                    display: none;
+                    background-color: black;
+                    left: 0;
+                    width: 300px;
+                    z-index: 1;
+                }
+                /* link inside dropdown */
+                
+                .dropdown-content a {
+                    font-family: main-font;
+                    text-decoration: none;
+                    color: chocolate;
+                    display: block;
+                    text-align: center;
+                    font-size: 25px;
+                    border: 1px solid gray;
+                }
+                
+                .dropdown-content a:hover {
+                    background-color: dimgray;
+                }
+                /* show dropdown content on hover */
+                
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+                /* wow-classic-menu-content style */
+                
+                .wow-classic-menu-content {
+                    display: none;
+                }
+                
+                .wow-classic-menu-content a {
+                    font-family: main-font;
+                    text-decoration: none;
+                    color: chocolate;
+                    display: block;
+                    text-align: center;
+                    font-size: 20px;
+                }
+                /*show wow-classic-menu on hover */
+                
+                .wow-classic-menu-content a:hover {
+                    background-color: dimgray;
+                }
+                
+                .wow-classic-menu:hover .wow-classic-menu-content {
+                    display: block;
+                }
+                /* CSS FOR SITE TEMPLATE ENDS HERE */
+                /* all headers and sections, guide highlights */
+                
+                .page-image {
+                    width: 80%;
+                    height: auto;
+                }
+                
+                .section-border {
+                    border: 1px solid black;
+                    background-color: gray;
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 70%;
+                    padding-left: 10px;
+                }
+                
+                .cangurul-font {
+                    font-family: main-font;
+                    color: chocolate;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                }
+                
+                .header-intro {
+                    font-family: main-font;
+                    border-bottom: 1px solid black;
+                }
+                
+                .guide-highlights a {
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    display: block;
+                    margin: 10px;
+                    text-decoration: none;
+                    color: chocolate;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    padding-left: 10%;
+                    width: 50%;
+                    transition: font-size 3s, color 2s;
+                }
+                
+                .guide-highlights a:hover {
+                    background-color: darkgray;
+                    font-size: 140%;
+                    color: orangered;
+                }
+                
+                .resto-wow-classic-content {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+                
+                .basic-header {
+                    font-family: main-font;
+                    border-bottom: 1px solid black;
+                }
+                
+                .fancy-quotes {
+                    font-family: main-font;
+                }
+                
+                .yellow-text {
+                    color: rgb(207, 207, 14);
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    text-decoration: none;
+                }
+                
+                .purple-text {
+                    color: blueviolet;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    text-decoration: none;
+                }
+                
+                .blue-text {
+                    color: rgb(43, 43, 230);
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    text-decoration: none;
+                }
+                
+                table {
+                    border-collapse: collapse;
+                    width: 70%;
+                }
+                
+                td,
+                th {
+                    border: 1px solid black;
+                    text-align: left;
+                    padding: 8px;
+                }
+                
+                tr:nth-child(even) {
+                    background-color: darkgray;
+                }
+                
+                html {
+                    scroll-behavior: smooth;
+                }
+                
+                .col {
+                    flex: 33%;
+                    max-width: 25%;
+                    padding: 0 4px;
+                    position: relative;
+                    text-align: center;
+                }
+                
+                img.col {
+                    margin-top: 8px;
+                    vertical-align: middle;
+                    width: 100%;
+                }
+                
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                }
+                
+                .txtoverlap {
+                    color: white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 10%;
+                }
+                
+                @media screen AND (min-width: 300px) {
+                    /* TEMPLATE */
+                    .dropdownbtn {
+                        font-size: 40px;
+                    }
+                    .dropdown-content {
+                        width: 120px;
+                    }
+                    .dropdown-content a {
+                        font-size: 20px;
+                    }
+                    .wow-classic-menu-content a {
+                        font-size: 15px;
+                    }
+                    header.top-side {
+                        height: 50px;
+                    }
+                    img {
+                        height: 80px;
+                        width: 80px;
+                    }
+                    /* TEMPLATE ENDS*/
+                    .section-border {
+                        width: 99%;
+                        padding-left: 10px;
+                    }
+                    .header-intro {
+                        font-size: 25px;
+                    }
+                    .cangurul-font {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .guidehighlights a {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .yellow-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .purple-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .blue-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    table {
+                        width: 100px;
+                    }
+                    .overflowing-tables {
+                        overflow-x: auto;
+                    }
+                    .resto-wow-classic-content {
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    img.page-image {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .col {
+                        flex: 50%;
+                        max-width: 40%;
+                    }
+                    @keyframes druid-moving {
+                        from {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    .animated-element {
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        animation: druid-moving 4s infinite;
+                        animation-timing-function: ease-in;
+                    }
+                }
+                
+                @media screen AND (min-width: 768px) {
+                    /* TEMPLATE */
+                    .dropdownbtn {
+                        font-size: 70px;
+                    }
+                    .dropdown-content {
+                        width: 300px;
+                    }
+                    .dropdown-content a {
+                        font-size: 40px;
+                    }
+                    .wow-classic-menu-content a {
+                        font-size: 35px;
+                    }
+                    header.top-side {
+                        height: 90px;
+                    }
+                    img {
+                        height: 140px;
+                        width: 140px;
+                    }
+                    /* TEMPLATE ENDS*/
+                    .section-border {
+                        width: 99%;
+                        padding-left: 10px;
+                    }
+                    .header-intro {
+                        font-size: 50px;
+                    }
+                    .cangurul-font {
+                        font-size: 30px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .guidehighlights a {
+                        font-size: 30px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .yellow-text {
+                        font-size: 30px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .purple-text {
+                        font-size: 30px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .blue-text {
+                        font-size: 30px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    table {
+                        width: 70%;
+                    }
+                    .resto-wow-classic-content {
+                        font-size: 20px;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .overflowing-tables {
+                        overflow-x: auto;
+                    }
+                    .col {
+                        flex: 50%;
+                        max-width: 40%;
+                    }
+                    img.page-image {
+                        width: 90%;
+                        height: auto;
+                    }
+                    @keyframes druid-moving {
+                        from {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    .animated-element {
+                        position: relative;
+                        width: auto;
+                        height: auto;
+                        animation: druid-moving 4s infinite;
+                        animation-timing-function: ease-in;
+                    }
+                }
+                
+                @media screen AND (min-width: 900px) {
+                    /* TEMPLATE */
+                    .dropdownbtn {
+                        font-size: 40px;
+                    }
+                    .dropdown-content {
+                        width: 300px;
+                    }
+                    .dropdown-content a {
+                        font-size: 25px;
+                    }
+                    .wow-classic-menu-content a {
+                        font-size: 20px;
+                    }
+                    header.top-side {
+                        height: 50px;
+                    }
+                    img {
+                        height: 90px;
+                        width: 90px;
+                    }
+                    /* TEMPLATE ENDS*/
+                    .section-border {
+                        width: 70%;
+                        padding-left: 10px;
+                    }
+                    .header-intro {
+                        font-size: 35px;
+                    }
+                    .cangurul-font {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .guide-highlights a {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .yellow-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .purple-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    .blue-text {
+                        font-size: 20px;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    }
+                    table {
+                        width: 80%;
+                    }
+                    img.page-image {
+                        min-width: 90%;
+                        height: auto;
+                    }
+                    .col {
+                        flex: 33%;
+                        max-width: 30%;
+                    }
+                    @keyframes druid-moving {
+                        from {
+                            left: 20px;
+                        }
+                        to {
+                            left: 200px;
+                        }
+                    }
+                    .animated-element {
+                        position: relative;
+                        width: 75px;
+                        height: 40px;
+                        animation: druid-moving 4s infinite;
+                        animation-timing-function: ease-in;
+                    }
+                }
