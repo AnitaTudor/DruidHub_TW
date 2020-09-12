@@ -115,5 +115,5 @@ app.use(function(req, res, next) {
 
 
 
-app.listen(7777);
+app.listen(process.env.PORT);
 console.log('Port open at 7777.');
